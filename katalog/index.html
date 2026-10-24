@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Temukan konsol PlayStation, aksesori, dan perlengkapan gaming pilihan di PS Store.">
+  <title>PS Store — Temukan gear bermainmu</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">Koleksi gaming pilihan, siap menemani setiap sesi bermain.</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="PS Store, kembali ke beranda">
+      <span class="brand-mark">PS</span>
+      <span class="brand-name">STORE<span class="brand-period">.</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Navigasi utama">
+      <a href="#koleksi">Koleksi</a>
+      <a href="#tentang">Tentang kami</a>
+    </nav>
+    <div class="header-actions">
+      <label class="search-box" for="product-search">
+        <img class="search-symbol" src="../image/search.png" alt="" aria-hidden="true">
+        <input id="product-search" type="search" placeholder="Cari produk..." autocomplete="off">
+      </label>
+      <button class="cart-button" id="open-cart" type="button" aria-label="Buka keranjang">
+        <img class="cart-symbol" src="../image/keranjang.png" alt="" aria-hidden="true">
+        <span class="cart-label">Keranjang</span>
+        <span class="cart-count" id="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> PILIHAN BUAT LEVEL UP</p>
+        <h1 id="hero-title">Waktunya main<br>di <span>level berikutnya.</span></h1>
+        <p class="hero-description">Konsol dan gear favorit untuk bikin setiap sesi bermain terasa lebih seru.</p>
+        <a class="primary-button" href="#koleksi">Jelajahi koleksi <span aria-hidden="true">↗</span></a>
+        <div class="hero-note"><span class="note-line"></span> Pilihan gaming, tanpa ribet.</div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="hero-glow"></div>
+        <div class="hero-orbit orbit-one"></div>
+        <div class="hero-orbit orbit-two"></div>
+        <div class="hero-tag tag-top">PLAY YOUR WAY</div>
+        <img src="../image/ps5%20pro.jpg" alt="">
+        <div class="hero-tag tag-bottom"><span class="tag-dot"></span> READY TO PLAY</div>
+      </div>
+      <div class="hero-index"><span>01</span> / 03</div>
+    </section>
+
+    <section class="benefits" aria-label="Keunggulan PS Store">
+      <div class="benefit"><span class="benefit-number">01</span><div><strong>Pilihan terkurasi</strong><small>Gear pilihan untuk gamer</small></div></div>
+      <div class="benefit"><span class="benefit-number">02</span><div><strong>Info produk jelas</strong><small>Spesifikasi dan harga terbuka</small></div></div>
+      <div class="benefit"><span class="benefit-number">03</span><div><strong>Pesan dengan mudah</strong><small>Langsung hubungi toko</small></div></div>
+    </section>
+
+    <section class="catalog section-wrap" id="koleksi" aria-labelledby="catalog-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span></span> PILIHAN MINGGU INI</p>
+          <h2 id="catalog-title">Temukan gear <span>andalanmu.</span></h2>
+        </div>
+        <p class="section-aside">Dari konsol sampai aksesori,<br>siap bikin waktu main makin seru.</p>
+      </div>
+      <div class="catalog-toolbar">
+        <div class="filter-list" role="group" aria-label="Filter kategori produk">
+          <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">Semua produk <span>09</span></button>
+          <button class="filter-button" type="button" data-filter="console" aria-pressed="false">Konsol</button>
+          <button class="filter-button" type="button" data-filter="accessory" aria-pressed="false">Aksesori</button>
+          <button class="filter-button" type="button" data-filter="special" aria-pressed="false">Spesial</button>
+        </div>
+        <label class="sort-control" for="sort-products">Urutkan
+          <select id="sort-products" aria-label="Urutkan produk">
+            <option value="featured">Pilihan toko</option>
+            <option value="price-low">Harga terendah</option>
+            <option value="price-high">Harga tertinggi</option>
+            <option value="name">Nama A–Z</option>
+          </select>
+        </label>
+      </div>
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      <p class="empty-state" id="empty-state" hidden>Belum ada produk yang cocok. Coba kata kunci lain.</p>
+      <p class="price-note">Harga pada katalog merupakan harga referensi dan dapat berubah. Silakan konfirmasi ketersediaan serta harga akhir saat memesan.</p>
+    </section>
+
+    <section class="story section-wrap" id="tentang">
+      <div class="story-label"><span class="story-star">✳</span> MAIN LEBIH SERU</div>
+      <div class="story-copy">
+        <h2>Gear yang pas.<br><span>Pengalaman yang beda.</span></h2>
+        <p>PS Store bantu kamu menemukan konsol dan aksesori gaming yang sesuai dengan cara bermainmu. Lihat detailnya, pilih favoritmu, lalu pesan langsung dengan mudah.</p>
+      </div>
+      <a class="story-link" href="#koleksi">Lihat semua produk <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#" aria-label="PS Store, kembali ke atas">
+      <span class="brand-mark">PS</span><span class="brand-name">STORE<span class="brand-period">.</span></span>
+    </a>
+    <p>Tempat gear gaming pilihanmu.</p>
+    <span class="footer-copy">© <span id="current-year"></span> PS Store. Dibuat untuk para pemain.</span>
+  </footer>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-labelledby="cart-title" aria-hidden="true">
+    <div class="drawer-heading">
+      <div><p class="eyebrow"><span></span> PILIHANMU</p><h2 id="cart-title">Keranjang</h2></div>
+      <button class="icon-button" type="button" data-close aria-label="Tutup keranjang">×</button>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-empty" id="cart-empty"><span class="empty-bag" aria-hidden="true">＋</span><strong>Keranjangmu masih kosong</strong><p>Yuk, temukan barang yang cocok buat sesi mainmu.</p></div>
+    <div class="cart-summary" id="cart-summary" hidden>
+      <div class="summary-row"><span>Subtotal</span><strong id="cart-subtotal"></strong></div>
+      <p>Ongkir dan konfirmasi stok akan diinformasikan oleh toko.</p>
+      <button class="primary-button checkout-button" id="checkout-button" type="button">Lanjut pesan <span aria-hidden="true">↗</span></button>
+    </div>
+  </aside>
+
+  <dialog class="product-dialog" id="product-dialog" aria-labelledby="dialog-title">
+    <button class="icon-button dialog-close" type="button" data-close aria-label="Tutup detail produk">×</button>
+    <div class="dialog-content" id="dialog-content"></div>
+  </dialog>
+
+  <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-title">
+    <button class="icon-button dialog-close" type="button" data-close aria-label="Tutup ringkasan pesanan">×</button>
+    <div class="order-dialog-content">
+      <p class="eyebrow"><span></span> SATU LANGKAH LAGI</p>
+      <h2 id="order-title">Siap untuk <span>pesan?</span></h2>
+      <p class="order-intro">Salin ringkasan ini dan kirim ke PS Store untuk konfirmasi stok, harga akhir, dan pengiriman.</p>
+      <pre class="order-message" id="order-message"></pre>
+      <button class="primary-button copy-order-button" id="copy-order" type="button">Salin ringkasan <span aria-hidden="true">↗</span></button>
+      <a class="whatsapp-order-button" id="whatsapp-order" href="#" target="_blank" rel="noopener" hidden>Kirim lewat WhatsApp <span aria-hidden="true">↗</span></a>
+      <p class="whatsapp-note" id="whatsapp-note"></p>
+    </div>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
