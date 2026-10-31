@@ -124,7 +124,7 @@ let activeFilter = "all";
 let toastTimer;
 
 function imagePath(filename) {
-  return `../image/${encodeURIComponent(filename)}`;
+  return `image/${encodeURIComponent(filename)}`;
 }
 
 function getVisibleProducts() {
@@ -317,6 +317,10 @@ document.querySelector("#dialog-content").addEventListener("click", (event) => {
   productDialog.close();
 });
 document.querySelector("#open-cart").addEventListener("click", openCart);
+document.querySelector("#shop-from-cart").addEventListener("click", () => {
+  closeCart();
+  document.querySelector("#koleksi").scrollIntoView({ behavior: "smooth" });
+});
 document.querySelector("#checkout-button").addEventListener("click", openOrderDialog);
 document.querySelector("#copy-order").addEventListener("click", async () => {
   try {

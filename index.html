@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ffffff">
   <meta name="description" content="Temukan konsol PlayStation, aksesori, dan perlengkapan gaming pilihan di PS Store.">
-  <title>PS Store — Temukan gear bermainmu</title>
+  <title>PS Store — Temukan konsol bermainmu</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
@@ -13,7 +13,7 @@
   <div class="announcement">Koleksi gaming pilihan, siap menemani setiap sesi bermain.</div>
   <header class="site-header">
     <a class="brand" href="#" aria-label="PS Store, kembali ke beranda">
-      <span class="brand-mark">PS</span>
+      <img class="brand-logo" src="image/logo.png" alt="">
       <span class="brand-name">STORE<span class="brand-period">.</span></span>
     </a>
     <nav class="main-nav" aria-label="Navigasi utama">
@@ -22,11 +22,11 @@
     </nav>
     <div class="header-actions">
       <label class="search-box" for="product-search">
-        <img class="search-symbol" src="../image/search.png" alt="" aria-hidden="true">
+        <img class="search-symbol" src="image/search.png" alt="" aria-hidden="true">
         <input id="product-search" type="search" placeholder="Cari produk..." autocomplete="off">
       </label>
       <button class="cart-button" id="open-cart" type="button" aria-label="Buka keranjang">
-        <img class="cart-symbol" src="../image/keranjang.png" alt="" aria-hidden="true">
+        <img class="cart-symbol" src="image/keranjang.png" alt="" aria-hidden="true">
         <span class="cart-label">Keranjang</span>
         <span class="cart-count" id="cart-count">0</span>
       </button>
@@ -36,25 +36,18 @@
   <main>
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow"><span></span> PILIHAN BUAT LEVEL UP</p>
-        <h1 id="hero-title">Waktunya main<br>di <span>level berikutnya.</span></h1>
-        <p class="hero-description">Konsol dan gear favorit untuk bikin setiap sesi bermain terasa lebih seru.</p>
+        <p class="eyebrow"><span></span> TEMUKAN PERLENGKAPAN FAVORIT</p>
+        <h1 id="hero-title">Lengkapi setup.<br><span>Nikmati permainan.</span></h1>
+        <p class="hero-description">Pilih konsol dan aksesori yang cocok untuk menemani waktu bermainmu.</p>
         <a class="primary-button" href="#koleksi">Jelajahi koleksi <span aria-hidden="true">↗</span></a>
-        <div class="hero-note"><span class="note-line"></span> Pilihan gaming, tanpa ribet.</div>
       </div>
       <div class="hero-art" aria-hidden="true">
-        <div class="hero-glow"></div>
-        <div class="hero-orbit orbit-one"></div>
-        <div class="hero-orbit orbit-two"></div>
-        <div class="hero-tag tag-top">PLAY YOUR WAY</div>
-        <img src="../image/ps5%20pro.jpg" alt="">
-        <div class="hero-tag tag-bottom"><span class="tag-dot"></span> READY TO PLAY</div>
+        <img src="image/ps5%20pro.jpg" alt="">
       </div>
-      <div class="hero-index"><span>01</span> / 03</div>
     </section>
 
     <section class="benefits" aria-label="Keunggulan PS Store">
-      <div class="benefit"><span class="benefit-number">01</span><div><strong>Pilihan terkurasi</strong><small>Gear pilihan untuk gamer</small></div></div>
+      <div class="benefit"><span class="benefit-number">01</span><div><strong>Pilihan terkurasi</strong><small>Konsol pilihan untuk gamer</small></div></div>
       <div class="benefit"><span class="benefit-number">02</span><div><strong>Info produk jelas</strong><small>Spesifikasi dan harga terbuka</small></div></div>
       <div class="benefit"><span class="benefit-number">03</span><div><strong>Pesan dengan mudah</strong><small>Langsung hubungi toko</small></div></div>
     </section>
@@ -63,7 +56,7 @@
       <div class="section-heading">
         <div>
           <p class="eyebrow"><span></span> PILIHAN MINGGU INI</p>
-          <h2 id="catalog-title">Temukan gear <span>andalanmu.</span></h2>
+          <h2 id="catalog-title">Temukan konsol <span>andalanmu.</span></h2>
         </div>
         <p class="section-aside">Dari konsol sampai aksesori,<br>siap bikin waktu main makin seru.</p>
       </div>
@@ -89,9 +82,8 @@
     </section>
 
     <section class="story section-wrap" id="tentang">
-      <div class="story-label"><span class="story-star">✳</span> MAIN LEBIH SERU</div>
       <div class="story-copy">
-        <h2>Gear yang pas.<br><span>Pengalaman yang beda.</span></h2>
+        <h2>Konsol yang pas.<br><span>Pengalaman yang beda.</span></h2>
         <p>PS Store bantu kamu menemukan konsol dan aksesori gaming yang sesuai dengan cara bermainmu. Lihat detailnya, pilih favoritmu, lalu pesan langsung dengan mudah.</p>
       </div>
       <a class="story-link" href="#koleksi">Lihat semua produk <span aria-hidden="true">↗</span></a>
@@ -100,9 +92,9 @@
 
   <footer class="site-footer">
     <a class="brand footer-brand" href="#" aria-label="PS Store, kembali ke atas">
-      <span class="brand-mark">PS</span><span class="brand-name">STORE<span class="brand-period">.</span></span>
+      <img class="brand-logo" src="image/logo.png" alt=""><span class="brand-name">STORE<span class="brand-period">.</span></span>
     </a>
-    <p>Tempat gear gaming pilihanmu.</p>
+    <p>Tempat konsol gaming pilihanmu.</p>
     <span class="footer-copy">© <span id="current-year"></span> PS Store. Dibuat untuk para pemain.</span>
   </footer>
 
@@ -113,7 +105,7 @@
       <button class="icon-button" type="button" data-close aria-label="Tutup keranjang">×</button>
     </div>
     <div class="cart-items" id="cart-items"></div>
-    <div class="cart-empty" id="cart-empty"><span class="empty-bag" aria-hidden="true">＋</span><strong>Keranjangmu masih kosong</strong><p>Yuk, temukan barang yang cocok buat sesi mainmu.</p></div>
+    <div class="cart-empty" id="cart-empty"><button class="empty-bag" id="shop-from-cart" type="button" aria-label="Lihat produk di katalog">＋</button><strong>Keranjangmu masih kosong</strong><p>Yuk, temukan barang yang cocok buat sesi mainmu.</p></div>
     <div class="cart-summary" id="cart-summary" hidden>
       <div class="summary-row"><span>Subtotal</span><strong id="cart-subtotal"></strong></div>
       <p>Ongkir dan konfirmasi stok akan diinformasikan oleh toko.</p>
